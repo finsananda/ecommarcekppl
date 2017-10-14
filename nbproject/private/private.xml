@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <coverage xmlns="http://www.netbeans.org/ns/code-coverage/1" enabled="true"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/ecommarcekppl/application/views/admin/kategori/data.php</file>
+            <file>file:/C:/xampp/htdocs/ecommarcekppl/application/views/templateadmin.php</file>
+            <file>file:/C:/xampp/htdocs/ecommarcekppl/application/tests/controllers/Welcome_test.php</file>
+            <file>file:/C:/xampp/htdocs/ecommarcekppl/application/controllers/admin/product.php</file>
+            <file>file:/C:/xampp/htdocs/ecommarcekppl/application/models/mod_kategori.php</file>
+            <file>file:/C:/xampp/htdocs/ecommarcekppl/application/controllers/demo.php</file>
+            <file>file:/C:/xampp/htdocs/ecommarcekppl/application/controllers/admin/kategori.php</file>
+        </group>
+    </open-files>
+</project-private>
