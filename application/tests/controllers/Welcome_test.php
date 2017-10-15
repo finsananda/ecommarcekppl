@@ -32,6 +32,7 @@ class Welcome_test extends TestCase
             $this->request('POST', 'admin/kategori/post');
             $this->assertContains('<p>Kategori</p>');
         }
+        
         public function test_edit_kategori(){
             $this->request('POST', 'admin/kategori/edit');
             $this->assertContains('<label>Nama Kategori</label>');
