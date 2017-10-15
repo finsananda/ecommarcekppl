@@ -5,6 +5,7 @@
                             <div class="box box-primary">
                                 <div class="box-header">
                                     <h3 class="box-title">Kategori</h3>
+                                    <p>Kategori</p>
                                 </div><!-- /.box-header -->
                                 <!-- form start -->
                                 <?php

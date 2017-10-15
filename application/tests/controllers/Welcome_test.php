@@ -28,6 +28,15 @@ class Welcome_test extends TestCase
 		$this->assertContains('<th>Nama Kategori</th>', $output); //di view diambil dari controoler sama model,
 	}
         
+        public function test_post_kategori(){
+            $this->request('POST', 'admin/kategori/post');
+            $this->assertContains('<p>Kategori</p>');
+        }
+        public function test_edit_kategori(){
+            $this->request('POST', 'admin/kategori/edit');
+            $this->assertContains('<label>Nama Kategori</label>');
+        }
+        
         public function test_delete_product()
 	{
 		$output = $this->request('GET', 'admin/product/delete');
@@ -43,12 +52,19 @@ class Welcome_test extends TestCase
                 $output = $this->request('GET', 'demo/index');
 		$this->assertContains('<p>Why not buy a new awesome theme?</p>', $output); //di view diambil dari controoler sama model,
         }
+     
         
-        public function test_edit() {
-            $this->request('POST', 'admin/kategori/edit');
-            
-            
+        
+        public function test_edit_product(){
+            $this->request('POST', 'admin/product/edit');
+            $this->assertContains('<p>Edit</p>');
         }
+        
+         public function test_post_product(){
+            $this->request('POST', 'admin/product/post');
+            $this->assertContains('<label>Nama Product</label>');
+        }
+        
         public function test_method_404()
 	{
 		$this->request('GET', 'welcome/method_not_exist');
