@@ -29,7 +29,15 @@ class Welcome_test extends TestCase
 	}
         
         public function test_post_kategori(){
-            $this->request('POST', 'admin/kategori/post');
+            $this->request('POST', 'admin/kategori/post',
+                    [
+                        'nama_kategori' => 'Pakaian Wanita',
+                        'parent' => 0,
+                        'link' => 'ga ada link',
+                        'nama_kategori_seo' => 'pakaian-wanita',
+                    ]
+                    );
+            $this->assertEquals('Pakaian Wanita', 0 , 'ga ada link','pakaian-wanita');
             $this->assertContains('<p>Kategori</p>');
         }
         
@@ -62,7 +70,15 @@ class Welcome_test extends TestCase
         }
         
          public function test_post_product(){
-            $this->request('POST', 'admin/product/post');
+            $this->request('POST', 'admin/product/post',
+                    [
+                    'nama_product'     =>  'cek',
+                    'harga'            =>  222,
+                    'kategori_id'      =>  3,
+                    'nama_product_seo' =>  'cek',
+                    ]
+                    );
+            $this->assertEquals('cek', 222 , 3,'cek');
             $this->assertContains('<label>Nama Product</label>');
         }
         
