@@ -27,8 +27,7 @@ class mod_kategori extends ci_model{
         $data=array(
                     'nama_kategori'     =>  $this->input->post('nama'),
                     'parent'            =>  $this->input->post('parent'),
-                    'link'              =>  $this->input->post('link'),
-                    'nama_kategori_seo' =>  seo_title($this->input->post('nama')));
+                    'link'              =>  $this->input->post('link'));
         $this->db->insert('tabel_kategori',$data);
     }
 

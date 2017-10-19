@@ -15,8 +15,7 @@ class mod_product extends ci_model{
         $data=array(
                     'nama_product'     =>  $this->input->post('nama_product'),
                     'harga'            =>  $this->input->post('harga'),
-                    'kategori_id'      =>  $this->input->post('kategori'),
-                    'nama_product_seo' =>  seo_title($this->input->post('nama_product')));
+                    'kategori_id'      =>  $this->input->post('kategori'));
                     $this->db->insert('tabel_product',$data);
     }
 

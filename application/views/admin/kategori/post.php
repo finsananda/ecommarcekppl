@@ -11,7 +11,7 @@
                                 <?php
                                 echo form_open('admin/kategori/post');
                                 ?>
-                                <form role="form">
+                                
                                     <div class="box-body">
                                         <div class="form-group">
                                             <label>Nama Kategori</label>
