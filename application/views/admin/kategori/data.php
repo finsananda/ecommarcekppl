@@ -1,4 +1,4 @@
-        <link href="<?php echo base_url()?>template/AdminLTE/css/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
+ <link href="<?php echo base_url()?>template/AdminLTE/css/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
         <!-- Theme style -->
         <link href="<?php echo base_url()?>template/AdminLTE/css/AdminLTE.css" rel="stylesheet" type="text/css" />
 <div class="box">
@@ -30,17 +30,13 @@
                                         			<td width='10'>$no</td>
                                         			<td>$r->nama_kategori</td>
                                         			<td>";
-
                                         			if($r->parent==0){
                                         				echo "Menu Utama";
                                         			}else{
                                         				$parent=$this->db->get_where('tabel_kategori',array('parent'=>$r->parent)) -> row_array();
                                         				echo $parent['nama_kategori'];
                                         			}
-
-
                                         			echo"</td>
-
                                         			<td></td>
                                         			<td width='10'>".anchor("admin/kategori/edit/".$r->kategori_id,"<span class='glyphicon glyphicon-tags' aria-hidden='true'></span>",array('title'=>'edit data'))."</td>
                                                      <td width='10'>".anchor("admin/kategori/delete/".$r->kategori_id,"<span class='glyphicon glyphicon-trash' aria-hidden='true'></span>",array('title'=>'delete data'))."</td>

@@ -26,8 +26,8 @@
                                             <select name="kategori" class="form-control">
                                              
                                                 <?php
-                                                foreach ($kategori as $k){
-                                                    echo "<option value='$k->kategori_id'>$k->nama_kategori</option>";
+                                                foreach ($product as $k){
+                                                    echo "<option value='$k->product_id'>$k->nama_product</option>";
                                                 }
                                                 ?>
                                             </select>

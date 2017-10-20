@@ -1,4 +1,4 @@
-        <link href="<?php echo base_url()?>template/AdminLTE/css/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url()?>template/AdminLTE/css/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
         <!-- Theme style -->
         <link href="<?php echo base_url()?>template/AdminLTE/css/AdminLTE.css" rel="stylesheet" type="text/css" /> 
 <!-- general form elements -->
@@ -45,4 +45,4 @@
                                         ?>
                                     </div>
                                 </form>
-                            </div><!-- /.box -->
+</div><!-- /.box -->
