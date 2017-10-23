@@ -22,7 +22,7 @@
             $this->template->load('templateadmin','admin/product/post',$data);}}
 
 
-    	function edit(){
+    		function edit(){
         if(isset($_POST['submit'])){
             $this->mod_kategori->update();
             redirect('admin/product');}
